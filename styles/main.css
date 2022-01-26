@@ -110,3 +110,18 @@ header {
   line-height: 20px;
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 100%;
+  }
+
+  .header__navbar-wrapper {
+    display: none;
+  }
+
+  .header__content-title {
+    font-size: 29px;
+    line-height: 43px;
+  }
+}
