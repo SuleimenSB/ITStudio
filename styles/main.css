@@ -326,16 +326,18 @@ hr {
   height: 45px;
   padding: 15px 36px;
 
-  border-radius: 30px;
-  background: #4985FF;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  color: #FFFFFF;
+  border-radius: 30px;
+  background: #4985FF;
   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border: none;
   color: #FFFFFF;
+  max-width: 200px;
 }
 
 .services__item {
@@ -378,6 +380,74 @@ hr {
 
 hr {
   border: 1px solid #E0E0E0;
+}
+
+.projects {
+  background-color: F6F6F8;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__content {
+  margin: 0 auto;
+}
+
+.project__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.projects__content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 70px;
+}
+
+.projects__content-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #999999;
+  max-width: 730px;
+}
+
+.projects__items {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.projects__items-img {
+  margin-right: 30px;
+}
+
+.projects__items-btn>button {
+  display: block;
+  padding: 15px 36px;
+  height: 45px;
+  max-width: 200px;
+  margin: 0 auto;
+
+  background: #4985FF;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 800px) {
@@ -433,11 +503,34 @@ hr {
     margin-bottom: 20px;
   }
 
-  .services__content-wrapper, .services__item {
+  .services__content-title {
+    font-size: 30px;
+  }
+
+  .services__content-wrapper,
+  .services__item,
+  .projects__items {
     flex-direction: column;
+  }
+
+  .services__items {
+    margin-bottom: 30px;
   }
 
   .services__content-title {
     margin-bottom: 30px;
+  }
+
+  .services__items>img {
+    width: 100%;
+  }
+
+  .projects__items-img{
+    margin-right: 0;
+  }
+
+  .projects__items-img>img {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
